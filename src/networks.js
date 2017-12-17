@@ -33,5 +33,15 @@ module.exports = {
     pubKeyHash: 0x30,
     scriptHash: 0x32,
     wif: 0xb0
+  },
+  chaucha: {
+    messagePrefix: 'Chaucha Signed Message:\n',
+    bip32: { // TODO: Not really Chaucha's BIP32 cause Chaucha aint got that.
+      public: 0x019da462,
+      private: 0x019d9cfe
+    },
+    pubKeyHash: 0x58,
+    scriptHash: 0x32,
+    wif: 0xd8
   }
 }
